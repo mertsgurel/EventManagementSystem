@@ -1,4 +1,4 @@
-                                                       Event Management System
+                                           Event Management System
 - Projeyi çalıştırabilmek için öncelikle postgresql’in bilgisayarda yüklü olması gerekir.
 - Application properties dosyasında username ve password’ü kendi bilgisayarınızdaki postgresql’e göre ayarladıktan sonra EventManagementDB adında boş bir veri tabanı oluşturmalıyız. (entity’lere karşılık gelen tabloları program çalıştırıldığında kendisi oluşturacaktır)
 
