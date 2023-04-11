@@ -1,0 +1,25 @@
+scalar DateTime
+
+type Event {
+    eventId: ID!
+    eventName: String!
+    startDate: DateTime!
+    endDate: DateTime!
+    quota: Int!
+    numberOfParticipants: Int!
+    user: User
+}
+
+extend type Query {
+    findAllEvents: [Event]!
+    findAllEventsPaged(page: Int, limit: Int): [Event]!
+    countEvents: Int!
+    findEventById(eventId: ID): Event
+}
+
+extend type Mutation {
+    createEvent(eventName:String!, startDate:DateTime!, endDate:DateTime!, quota:Int!, numberOfParticipants:Int!, userId: Int!): Event
+    updateEvent(eventId:Int!, eventName:String!, startDate:DateTime!, endDate:DateTime!, quota:Int!, numberOfParticipants:Int!): Event
+    deleteEvent(eventId: ID!): Boolean
+}
+

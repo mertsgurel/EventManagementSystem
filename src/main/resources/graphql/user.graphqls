@@ -1,0 +1,19 @@
+type User {
+    userId: ID!
+    name: String!
+    email: String!
+    password: String!
+}
+
+
+type Query {
+    findAllUsers: [User]!
+    findAllUsersPaged(page: Int, limit: Int): [User]!
+    countUsers: Int!
+    findUserById(userId: ID): User
+}
+
+
+type Mutation {
+    createUser(name: String!, email: String!, password: String!): User
+}
