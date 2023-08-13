@@ -5,7 +5,7 @@
 
 ![postman](https://user-images.githubusercontent.com/78481960/230923631-acf40353-c1b8-4916-b275-08a56cea439c.PNG)
 
-# **Test Görselleri**
+# **Test Images**
 
 ![createUser](https://user-images.githubusercontent.com/78481960/231138556-ecdc0685-fcbb-4209-8051-071764da6782.PNG)
 
